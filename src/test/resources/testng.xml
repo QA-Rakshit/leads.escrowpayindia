@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Form_Fill" enabled="false">
+	<parameter name="url" value="https://leads.escrowpayindia.com/"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="FillForm"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Form_Fill_Iprive" enabled="true">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/iprive-form"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="FillIpriveForm"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
