@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Form_Fill" enabled="false">
-	<parameter name="url" value="https://leads.escrowpayindia.com/"></parameter>
+  <test name="Form_Fill_Main" enabled="true">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/"></parameter>
   	<classes>
   		<class name="Automation.Form_Automation">
   			<methods>
@@ -14,7 +14,137 @@
   	</classes>
   </test> <!-- Test -->
   
-  <test name="Form_Fill_Iprive" enabled="true">
+  <test name="Form_Fill_Leads" enabled="false">
+	<parameter name="url" value="https://leads.escrowpayindia.com/default-registration"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="FillForm"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Form_Fill_Godrej" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/ep-godrej-register"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="GodrejFormFill"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Form_Fill_Zoho" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/ep-zoho-register"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="GodrejFormFill"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Form_Fill_Zyapaar" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/ep-zyapaar-register"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="GodrejFormFill"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Form_Fill_Maxemo" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/maxemo-registration"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="GodrejFormFill"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Form_Fill_Gcpit" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/gcpit-registration"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="GcpitFormFill"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+	
+	<test name="Marketing_Form_Fill" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/marketing-form"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="MarketingFormFill"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="CimsmeFormFill" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/cimsme-registration"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="GodrejFormFill"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="I2CFormFill" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/i2c-form"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="Invoice2Cash"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="OptikashFormFill" enabled="false">
+	<parameter name="url" value="https://leads-uat.escrowpayindia.com/optikash-form"></parameter>
+  	<classes>
+  		<class name="Automation.Form_Automation">
+  			<methods>
+  				<include name="LaunchBrowser"></include>
+  				<include name="VisitSite"></include>
+  				<include name="Invoice2Cash"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Form_Fill_Iprive" enabled="false">
 	<parameter name="url" value="https://leads-uat.escrowpayindia.com/iprive-form"></parameter>
   	<classes>
   		<class name="Automation.Form_Automation">

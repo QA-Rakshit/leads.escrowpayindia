@@ -51,6 +51,61 @@ public class Form_Automation {
 		
 	}
 	
+	@Test
+	public void GodrejFormFill() throws InterruptedException
+	{
+		driver.findElement(By.id("name")).sendKeys("Rakshit");
+		driver.findElement(By.id("company_name")).sendKeys("Trustmore");
+		driver.findElement(By.id("nature_of_the_business")).sendKeys("Fintech");
+		driver.findElement(By.id("city")).sendKeys("Patna");
+		driver.findElement(By.id("mobile_number")).sendKeys("1234567890");
+		driver.findElement(By.id("email_id")).sendKeys("abc@gmail.com");
+		driver.findElement(By.id("accept_terms")).click();
+		Thread.sleep(20000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+	}
+	
+	@Test
+	public void GcpitFormFill() throws InterruptedException
+	{
+		driver.findElement(By.id("name")).sendKeys("Rakshit");
+		driver.findElement(By.id("company_name")).sendKeys("Trustmore");
+		driver.findElement(By.id("nature_of_the_business")).sendKeys("Fintech");
+		driver.findElement(By.id("city")).sendKeys("Patna");
+		driver.findElement(By.id("mobile_number")).sendKeys("1234567890");
+		driver.findElement(By.id("email_id")).sendKeys("abc@gmail.com");
+		driver.findElement(By.id("pan_number")).sendKeys("XBCTY1234D");
+		driver.findElement(By.id("gst_number")).sendKeys("52AAAAA0000A1Z5");
+		driver.findElement(By.id("accept_terms")).click();
+		Thread.sleep(50000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+	}
+	
+	@Test
+	public void MarketingFormFill() throws InterruptedException
+	{
+		driver.findElement(By.id("name")).sendKeys("Rakshit");
+		driver.findElement(By.id("email_id")).sendKeys("abc@gmail.com");
+		driver.findElement(By.id("city")).sendKeys("Patna");
+		driver.findElement(By.id("mobile_no")).sendKeys("1234567890");
+		Thread.sleep(20000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+	}
+	
+	@Test
+	public void Invoice2Cash() throws InterruptedException
+	{
+		driver.findElement(By.id("name")).sendKeys("Rakshit");
+		driver.findElement(By.id("email_id")).sendKeys("abc@gmail.com");
+		driver.findElement(By.id("city")).sendKeys("Patna");
+		driver.findElement(By.id("mobile_no")).sendKeys("1234567890");
+		driver.findElement(By.id("company_name")).sendKeys("Trustmore");
+		driver.findElement(By.id("nature_of_business")).sendKeys("Fintech");
+		Thread.sleep(60000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
+	}
+	
 	@Test	
 	public void FillIpriveForm() throws InterruptedException
 	{
